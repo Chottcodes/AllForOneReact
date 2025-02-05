@@ -1,11 +1,24 @@
-import { useEffect } from "react"
+import { useEffect, useState } from "react"
 import { Link } from "react-router-dom";
+import { AskingQuestionsAPI } from "../../services/DataServices";
 
-const AskingQuestions = () => {
+const AskingQuestions =  () => {
+    const [userInputOne,setuserInputOne]=useState("");
+    const [userInputTwo,setuserInputTwo]=useState("");
+    const [ApiText,setApiText]=useState("")
+    const clickSubmit = async () => {
+        setApiText(await AskingQuestionsAPI(userInputOne,userInputTwo));
+    }
+
     useEffect(() => {
         document.body.style.backgroundImage = "url('/src/assets/blackhole.jpg')";
         document.body.className ="h-screen bg-cover overflow-hidden bg-center bg-no-repeat";
+        setApiText('Please enter your name and the time you woke up.')
       }, []);
+      useEffect(() => {
+        console.log(userInputOne)
+        console.log(userInputTwo)
+      }, [userInputOne,userInputTwo]);
     return (
         <>
        
@@ -13,7 +26,7 @@ const AskingQuestions = () => {
       className="outputContainer bg-black bg-opacity-70 w-[80%] text-2xl h-32 lg:w-[60%] lg:h-[20%] lg:text-4xl m-auto my-10 rounded-2xl text-white flex justify-center items-center"
     >
       <h1 className="text-center" id="outputBox">
-        Please enter your name and the time you woke up
+        {ApiText}
       </h1>
     </div>
    
@@ -23,7 +36,7 @@ const AskingQuestions = () => {
       <input
         type="text"
         placeholder="Name"
-        id="nameInput"
+        onChange={(e) => setuserInputOne(e.target.value)}
         className="bg-black lg:text-4xl bg-opacity-80 outline outline-white outline-3 w-[100%] text-white rounded-2xl font-sans text-2xl text-center"
       />
     </div>
@@ -33,6 +46,7 @@ const AskingQuestions = () => {
       <input
         type="text"
         placeholder="Wake-Up Time"
+        onChange={(e1) => setuserInputTwo(e1.target.value)}
         id="wakeUpInput"
         className="bg-black lg:text-4xl bg-opacity-80 outline outline-white outline-3 w-[100%] text-white rounded-2xl font-sans text-2xl text-center"
       />
@@ -44,6 +58,7 @@ const AskingQuestions = () => {
       <button
         className="bg-black bg-opacity-65 outline outline-white rounded-2xl h-[100%] w-[100%] lg:text-3xl lg:w-[80%] lg:h-[90%] text-white hover:outline-white hover:bg-black"
         id="submitBTN"
+        onClick={clickSubmit}
         >
         Submit
       </button>
