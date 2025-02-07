@@ -22,6 +22,7 @@ const AddingNumbers = () => {
 
   return (
     <>
+    <div className="h-[90%] pt-4">
       <div className="bg-black w-[80%] h-[20%] lg:w-[50%] lg:mt-[5%] lg:text-3xl m-auto my-7 rounded-2xl bg-opacity-70 outline outline-white outline-1 text-white flex justify-center items-center text-2xl">
         <h1>Enter 2 number I can add</h1>
       </div>
@@ -73,6 +74,7 @@ const AddingNumbers = () => {
         >
           Reset
         </button>
+      </div>
       </div>
     </>
   );

@@ -20,6 +20,7 @@ const Magic8Ball = () => {
   }, []);
   return (
     <>
+    <div className="h-[90%] ">
       <div className="prompt-container bg-black flex justify-center lg:my-24 items-center text-white text-2xl font-sans bg-opacity-70 h-[15%] w-[70%] lg:w-[35%] m-auto mt-20 my-6 rounded-3xl outline outline-white outline-1">
         <h1 id="outputBox">{ApiText}</h1>
       </div>
@@ -57,6 +58,7 @@ const Magic8Ball = () => {
         >
           Reset
         </button>
+      </div>
       </div>
     </>
   );

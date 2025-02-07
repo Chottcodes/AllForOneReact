@@ -22,8 +22,9 @@ const GreaterThan = () => {
   };
   return (
     <>
-      <div className="outputContainer bg-black bg-opacity-70 w-[80%] text-2xl h-32 lg:w-[60%] lg:h-[20%] lg:text-4xl m-auto my-10 rounded-2xl text-white flex justify-center items-center">
-        <h1 className="text-center" id="outputBox">
+    <div className="h-[100%] pt-2">
+      <div className="outputContainer border border-white bg-black bg-opacity-70 w-[80%] text-2xl h-32 lg:w-[60%] lg:h-[20%] lg:text-4xl m-auto my-10 rounded-2xl text-white flex justify-center items-center">
+        <h1 className="text-center " id="outputBox">
           {ApiText}
         </h1>
       </div>
@@ -72,6 +73,7 @@ const GreaterThan = () => {
         >
           Reset
         </button>
+      </div>
       </div>
     </>
   );

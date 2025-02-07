@@ -19,6 +19,7 @@ const ReverseNumber = () => {
   }, []);
   return (
     <>
+    <div className="h-[100%] pt-5">
       <div className="w-[80%] h-[20%]  lg:w-[50%] lg:mt-[10%] text-2xl text-center bg-black m-auto rounded-3xl outline font-sans text-white flex justify-center items-center outline-white outline-1 my-9 bg-opacity-70">
         <h1 id="outputBox" className="text-center">
           {ApiText}
@@ -57,6 +58,7 @@ const ReverseNumber = () => {
         >
           Reset
         </button>
+      </div>
       </div>
     </>
   );
