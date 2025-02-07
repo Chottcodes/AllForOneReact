@@ -146,7 +146,7 @@ const Madlib = () => {
         </h1>
       </div>
 
-      <div className="buttons h-[40%] w-[40%] gap-2 m-auto flex flex-col mb-14 lg:flex-row lg:h-[10%] lg:w-[70%] lg:mb-[30%]">
+      <div className="buttons h-[40%] pb-4 w-[40%] gap-2 m-auto flex flex-col mb-14 lg:flex-row lg:h-[10%] lg:w-[70%] lg:mb-[30%]">
         <button
           className="bg-black bg-opacity-70 text-white rounded-2xl h-[25%] w-[100%] lg:py-4 m-auto outline outline-white outline-2 hover:bg-black lg:w-[30%] lg:h-[100%]"
           id="SubmitBTN"
