@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import { SayHelloAPI } from "../../services/DataServices";
+import { SayHelloAPI } from "/src/services/DataServices";
 
 const SayHello = () => {
   const [userInput, setuserInput] = useState("");
@@ -15,7 +15,7 @@ const SayHello = () => {
   };
   useEffect(() => {
     document.body.style.backgroundImage =
-      "url('/src/assets/wavingspaceman.jpg')";
+      "url('/assets/wavingspaceman.jpg')";
     document.body.className =
       "h-screen bg-cover overflow-hidden bg-center bg-no-repeat";
   }, []);

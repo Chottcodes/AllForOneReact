@@ -1,22 +1,22 @@
-import { StrictMode } from 'react'
-import { createRoot } from 'react-dom/client'
-import './index.css'
-import App from './App.jsx'
+import { StrictMode } from "react";
+import { createRoot } from "react-dom/client";
+import "./index.css";
+import App from "./App.jsx";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 //All of my pages imports
-import SayHelloPage from "./assets/pages/SayHelloPage";
-import AskingQuestionsPage from "./assets/pages/AskingQuestionsPage";
-import RestaurantPickerPage from "./assets/pages/RestaurantPickerPage";
-import Magic8BallPage from "./assets/pages/Magic8BallPage";
-import AddingNumbersPage from "./assets/pages/AddingNumbersPage";
-import ReverseTheWordPage from "./assets/pages/ReverseTheWordPage";
-import ReverseTheNumberPage from "./assets/pages/ReverseTheNumberPage";
-import OddorEvenPage from "./assets/pages/OddOrEvenPage";
-import MadlibPage from "./assets/pages/MadlibPage";
-import GreaterThanLessThanPage from "./assets/pages/GreaterThanLessThanPage";
+import SayHelloPage from "./Components/SayHelloPage.jsx"
+import AskingQuestionsPage from "./Components/AskingQuestionsPage.jsx";
+import RestaurantPickerPage from "./Components/RestaurantPickerPage.jsx";
+import Magic8BallPage from "./Components/Magic8BallPage.jsx";
+import AddingNumbersPage from "./Components/AddingNumbersPage.jsx";
+import ReverseTheWordPage from "./Components/ReverseTheWordPage.jsx";
+import ReverseTheNumberPage from "./Components/ReverseTheNumberPage.jsx";
+import OddorEvenPage from "./Components/OddOrEvenPage.jsx";
+import MadlibPage from "./Components/MadlibPage.jsx";
+import GreaterThanLessThanPage from "./Components/GreaterThanLessThanPage.jsx";
 
-createRoot(document.getElementById('root')).render(
+createRoot(document.getElementById("root")).render(
   <StrictMode>
     <BrowserRouter>
       <Routes>
@@ -36,5 +36,5 @@ createRoot(document.getElementById('root')).render(
         />
       </Routes>
     </BrowserRouter>
-  </StrictMode>,
-)
+  </StrictMode>
+);

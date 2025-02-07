@@ -1,12 +1,12 @@
 import "./App.css";
-import sayHelloImage from "./assets/hello.png";
-import AskingQuestionsImage from "./assets/question.png";
-import RestaurantPickerImage from "./assets/restaurant.png";
-import Magic8BallImage from "./assets/8-ball.png";
-import AddingNumbersImage from "./assets/maths.png";
-import ReverseTheWordImage from "./assets/exchange.png";
-import OddorEvenImage from "./assets/balance.png";
-import MadlibImage from "./assets/paper.png";
+import sayHelloImage from "/assets/hello.png";
+import AskingQuestionsImage from "/assets/question.png";
+import RestaurantPickerImage from "/assets/restaurant.png";
+import Magic8BallImage from "/assets/8-ball.png";
+import AddingNumbersImage from "/assets/maths.png";
+import ReverseTheWordImage from "/assets/exchange.png";
+import OddorEvenImage from "/assets/balance.png";
+import MadlibImage from "/assets/paper.png";
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
 
@@ -16,7 +16,7 @@ import { Link } from "react-router-dom";
 function App() {
 
      useEffect(() => {
-        document.body.style.backgroundImage = "url('../src/assets/spacepicture.jpg')";
+        document.body.style.backgroundImage = "url('/assets/spacepicture.jpg')";
         document.body.className ="min-h-screen bg-cover bg-center bg-no-repeat bg-fixed"
       }, []);
   return (

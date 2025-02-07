@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import { MadlibAPI } from "../../services/DataServices";
+import { MadlibAPI } from "../services/DataServices";
 
 const Madlib = () => {
   const [cityInput, setcityInput] = useState("");
@@ -27,7 +27,7 @@ const Madlib = () => {
     setbasketballInput,
   ];
   useEffect(() => {
-    document.body.style.backgroundImage = "url('/src/assets/frozenplanet.jpg')";
+    document.body.style.backgroundImage = "url('/assets/frozenplanet.jpg')";
     document.body.className =
       "min-h-screen fadeIn bg-cover bg-center bg-no-repeat bg-fixed";
   }, []);
@@ -48,10 +48,10 @@ const Madlib = () => {
     );
   };
   const resetClick = () => {
-    SetInputArr.forEach((i)=>{
+    SetInputArr.forEach((i) => {
       i("");
-    })
-    setApiText("")
+    });
+    setApiText("");
   };
   return (
     <div className="h-screen">
