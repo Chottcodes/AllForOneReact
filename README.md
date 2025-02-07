@@ -10,3 +10,5 @@
  // You can add multiple dates with description.
 
 // Person who Peer Reviewed your assignment
+// Alexander Soria
+// Your project overall works as intended, with good responsiveness on each page. I like the aesthetic of the pages and it's simple to read and understand. Overall a very solid project.
