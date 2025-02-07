@@ -28,7 +28,7 @@ const SayHello = () => {
   return (
     <>
       <div className="outputContainer bg-black bg-opacity-70 w-[80%] h-32 text-2xl lg:w-[60%] lg:h-[20%] lg:text-4xl m-auto my-10 rounded-2xl text-white flex justify-center items-center">
-        <h1 id="outputBox">{ApiText}</h1>
+        <h1 id="outputBox" className="text-center">{ApiText}</h1>
       </div>
 
       <div className="bg-black bg-opacity-70 w-[80%] h-32 lg:w-[50%] lg:h-[25%] m-auto rounded-2xl flex justify-center">

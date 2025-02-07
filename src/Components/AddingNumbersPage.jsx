@@ -48,7 +48,7 @@ const AddingNumbers = () => {
       </div>
 
       <div className="w-[90%] h-[15%] my-7 lg:w-[40%] lg:h-[15%] text-2xl text-white outline outline-white outline-1 bg-black rounded-3xl bg-opacity-75 m-auto flex justify-center items-center">
-        <h1 id="outputBox">{ApiText}</h1>
+        <h1 id="outputBox" className="text-center">{ApiText}</h1>
       </div>
       <div className="buttonContainer bg-opacity-70 w-[40%] h-52 text-3xl flex flex-col gap-5 lg:h-20 lg:w-[50%] lg:gap-5 lg:items-center lg:flex-row lg:my-14 m-auto my-7 rounded-2xl lg:justify-evenly">
         <button

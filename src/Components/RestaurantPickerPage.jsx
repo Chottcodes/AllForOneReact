@@ -25,7 +25,7 @@ const ResPicker = () => {
   return (
     <>
       <div className="w-72 h-36 bg-black lg:w-[30%] lg:my-[5%] m-auto my-4 mt-10 rounded-3xl text-white flex justify-center items-center text-3xl bg-opacity-80 outline outline-white outline-2">
-        <h1 id="outputBox">{ApiText}</h1>
+        <h1 id="outputBox" className="text-center">{ApiText}</h1>
       </div>
 
       <div className=" h-[20%] w-[70%] lg:w-[50%]  m-auto text-white">
