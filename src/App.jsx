@@ -15,7 +15,6 @@ import { Link } from "react-router-dom";
 
 function App() {
 
-
      useEffect(() => {
         document.body.style.backgroundImage = "url('../src/assets/spacepicture.jpg')";
         document.body.className ="min-h-screen bg-cover bg-center bg-no-repeat bg-fixed"
