@@ -18,7 +18,7 @@ const ResPicker = () => {
   useEffect(() => {
     document.body.style.backgroundImage = "url('/assets/Nebula.jpg')";
     document.body.className =
-      "h-screen fadeIn bg-cover overflow-hidden bg-center bg-no-repeat";
+      "min-h-screen fadeIn bg-cover bg-center bg-no-repeat bg-fixed";
     setApiText("Select a category");
   }, []);
 

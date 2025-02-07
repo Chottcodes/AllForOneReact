@@ -18,7 +18,7 @@ const SayHello = () => {
     document.body.style.backgroundImage =
       "url('/assets/wavingspaceman.jpg')";
     document.body.className =
-      "h-screen bg-cover overflow-hidden bg-center bg-no-repeat";
+      "min-h-screen fadeIn bg-cover bg-center bg-no-repeat bg-fixed";
   }, []);
   useEffect(() => {
     console.log("Changes are being made");
@@ -27,6 +27,7 @@ const SayHello = () => {
 
   return (
     <>
+    
       <div className="outputContainer bg-black bg-opacity-70 w-[80%] h-32 text-2xl lg:w-[60%] lg:h-[20%] lg:text-4xl m-auto my-10 rounded-2xl text-white flex justify-center items-center">
         <h1 id="outputBox" className="text-center">{ApiText}</h1>
       </div>
@@ -66,6 +67,7 @@ const SayHello = () => {
           Reset
         </button>
       </div>
+     
     </>
   );
 };

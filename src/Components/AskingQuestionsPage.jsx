@@ -18,7 +18,7 @@ const AskingQuestions = () => {
   useEffect(() => {
     document.body.style.backgroundImage = "url('/assets/blackhole.jpg')";
     document.body.className =
-      "h-screen bg-cover overflow-hidden bg-center bg-no-repeat";
+      "min-h-screen fadeIn bg-cover bg-center bg-no-repeat bg-fixed";
     setApiText("Please enter your name and the time you woke up.");
   }, []);
   useEffect(() => {
