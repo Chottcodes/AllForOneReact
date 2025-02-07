@@ -35,7 +35,7 @@ const ReverseNumber = () => {
           className="w-[100%] h-[100%] bg-black rounded-3xl outline text-white text-2xl text-center outline-white outline-2 bg-opacity-70"
         />
       </div>
-      <div className="buttonContainer bg-opacity-70 w-[60%] h-56 text-3xl flex flex-col gap-5 lg:h-20 lg:w-[50%] lg:gap-12 lg:items-center lg:flex-row lg:my-14 m-auto my-7 rounded-2xl lg:justify-evenly">
+      <div className="buttonContainer bg-opacity-70 w-[60%]  h-56 text-3xl flex flex-col gap-5 md:h-[40%] lg:h-20 lg:w-[50%] lg:gap-12 lg:items-center lg:flex-row lg:my-14 m-auto my-7 rounded-2xl lg:justify-evenly">
         <button
           className="bg-black bg-opacity-65 outline outline-white rounded-2xl h-[100%] w-[100%] lg:text-3xl lg:w-[80%] lg:h-[90%] text-white hover:outline-white hover:bg-black"
           id="SubmitBTN"

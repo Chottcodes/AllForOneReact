@@ -18,7 +18,7 @@ const ResPicker = () => {
   useEffect(() => {
     document.body.style.backgroundImage = "url('/assets/Nebula.jpg')";
     document.body.className =
-      "min-h-screen fadeIn bg-cover bg-center bg-no-repeat bg-fixed";
+      "h-screen fadeIn bg-cover overflow-hidden bg-center bg-no-repeat";
     setApiText("Select a category");
   }, []);
 
@@ -28,7 +28,7 @@ const ResPicker = () => {
         <h1 id="outputBox" className="text-center">{ApiText}</h1>
       </div>
 
-      <div className=" h-[20%] w-[70%] lg:w-[50%]  m-auto text-white">
+      <div className=" h-[20%] w-[70%] lg:w-[50%] m-auto text-white">
         <input
           type="text"
           placeholder="Mexican,Indian,Italian"

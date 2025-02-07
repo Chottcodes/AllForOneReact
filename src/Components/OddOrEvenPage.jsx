@@ -38,16 +38,16 @@ const OddorEven = () => {
       <div className="w-[80%] h-[10%] lg:w-[20%] lg:h-[15%] text-3xl bg-black m-auto rounded-3xl outline font-sans text-white flex justify-center items-center outline-white outline-1 my-9 bg-opacity-70">
         <h1 id="outputBox">{ApiText}</h1>
       </div>
-      <div className="buttonContainer bg-opacity-70 w-[60%] h-52 flex flex-col gap-5 lg:h-20 lg:w-[50%] lg:gap-12 lg:items-center lg:flex-row lg:my-14 m-auto my-7 rounded-2xl lg:justify-evenly">
+      <div className="buttonContainer bg-opacity-70 w-[60%] h-52 flex flex-col gap-5 md:h-[40%] lg:h-20 lg:w-[50%] lg:gap-12 lg:items-center lg:flex-row lg:my-14 m-auto my-7 rounded-2xl lg:justify-evenly">
         <button
-          className="bg-black bg-opacity-65 outline outline-white rounded-2xl h-[100%] w-[100%] lg:text-3xl lg:w-[80%] lg:h-[90%] text-white hover:outline-white hover:bg-black"
+          className="bg-black bg-opacity-65 outline outline-white rounded-2xl h-[100%] w-[100%] md:text-2xl lg:text-3xl lg:w-[80%] lg:h-[90%] text-white hover:outline-white hover:bg-black"
           id="SubmitBTN"
           onClick={submitClick}
         >
           Submit
         </button>
         <Link
-          className="bg-black bg-opacity-65 flex justify-center items-center outline outline-white rounded-2xl h-[100%] w-[100%] lg:text-3xl lg:w-[80%] lg:h-[90%] text-white hover:outline-white hover:bg-black"
+          className="bg-black bg-opacity-65 md:text-2xl flex justify-center items-center outline outline-white rounded-2xl h-[100%] w-[100%] lg:text-3xl lg:w-[80%] lg:h-[90%] text-white hover:outline-white hover:bg-black"
           to="/"
         >
           <button className="" id="homeBTN">
@@ -55,7 +55,7 @@ const OddorEven = () => {
           </button>
         </Link>
         <button
-          className="bg-black bg-opacity-65 outline outline-white rounded-2xl h-[100%] w-[100%] lg:block lg:text-3xl lg:w-[80%] lg:h-[90%] text-white hover:outline-white hover:bg-black"
+          className="bg-black bg-opacity-65 md:text-2xl outline outline-white rounded-2xl h-[100%] w-[100%] lg:block lg:text-3xl lg:w-[80%] lg:h-[90%] text-white hover:outline-white hover:bg-black"
           id="resetBTN"
           onClick={resetClick}
         >

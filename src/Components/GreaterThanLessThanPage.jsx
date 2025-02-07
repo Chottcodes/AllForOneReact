@@ -50,16 +50,16 @@ const GreaterThan = () => {
         />
       </div>
 
-      <div className="buttonContainer bg-opacity-70 text-3xl w-[40%] h-56 flex flex-col gap-5 lg:h-20 lg:w-[50%] lg:gap-5 lg:items-center lg:flex-row lg:my-14 m-auto my-10 rounded-2xl lg:justify-evenly">
+      <div className="buttonContainer bg-opacity-70 text-3xl md:h-[35%] w-[40%] h-56 flex flex-col gap-5 lg:h-20 lg:w-[50%] lg:gap-5 lg:items-center lg:flex-row lg:my-14 m-auto my-10 rounded-2xl lg:justify-evenly">
         <button
-          className="bg-black bg-opacity-65 outline outline-white rounded-2xl h-[100%] w-[100%] lg:text-3xl lg:w-[80%] lg:h-[90%] text-white hover:outline-white hover:bg-black"
+          className="bg-black bg-opacity-65 md:text-2xl outline outline-white rounded-2xl h-[100%] w-[100%] lg:text-3xl lg:w-[80%] lg:h-[90%] text-white hover:outline-white hover:bg-black"
           id="submitBTN"
           onClick={submitClick}
         >
           Submit
         </button>
         <Link
-          className="bg-black bg-opacity-65 flex justify-center items-center outline outline-white rounded-2xl h-[100%] w-[100%] lg:text-3xl lg:w-[80%] lg:h-[90%] text-white hover:outline-white hover:bg-black"
+          className="bg-black bg-opacity-65 md:text-2xl flex justify-center items-center outline outline-white rounded-2xl h-[100%] w-[100%] lg:text-3xl lg:w-[80%] lg:h-[90%] text-white hover:outline-white hover:bg-black"
           to="/ "
         >
           <button className="" id="homeBTN">
@@ -67,7 +67,7 @@ const GreaterThan = () => {
           </button>
         </Link>
         <button
-          className="bg-black bg-opacity-65 outline outline-white rounded-2xl h-[100%] w-[100%] lg:block lg:text-3xl lg:w-[80%] lg:h-[90%] text-white hover:outline-white hover:bg-black"
+          className="bg-black bg-opacity-65 md:text-2xl outline outline-white rounded-2xl h-[100%] w-[100%] lg:block lg:text-3xl lg:w-[80%] lg:h-[90%] text-white hover:outline-white hover:bg-black"
           id="resetButton"
           onClick={resetClick}
         >
