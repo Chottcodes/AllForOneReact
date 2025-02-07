@@ -9,6 +9,11 @@ const AskingQuestions =  () => {
     const clickSubmit = async () => {
         setApiText(await AskingQuestionsAPI(userInputOne,userInputTwo));
     }
+    const resetClick = ()=>{
+      setApiText("Please enter your name and the time you woke up.")
+      setuserInputOne("")
+      setuserInputTwo("")
+    }
 
     useEffect(() => {
         document.body.style.backgroundImage = "url('/src/assets/blackhole.jpg')";
@@ -37,6 +42,7 @@ const AskingQuestions =  () => {
         type="text"
         placeholder="Name"
         onChange={(e) => setuserInputOne(e.target.value)}
+        value={userInputOne}
         className="bg-black lg:text-4xl bg-opacity-80 outline outline-white outline-3 w-[100%] text-white rounded-2xl font-sans text-2xl text-center"
       />
     </div>
@@ -47,6 +53,7 @@ const AskingQuestions =  () => {
         type="text"
         placeholder="Wake-Up Time"
         onChange={(e1) => setuserInputTwo(e1.target.value)}
+        value={userInputTwo}
         id="wakeUpInput"
         className="bg-black lg:text-4xl bg-opacity-80 outline outline-white outline-3 w-[100%] text-white rounded-2xl font-sans text-2xl text-center"
       />
@@ -71,6 +78,7 @@ const AskingQuestions =  () => {
       <button
         className="bg-black bg-opacity-65 outline outline-white rounded-2xl h-[100%] w-[100%] lg:block lg:text-3xl lg:w-[80%] lg:h-[90%] text-white hover:outline-white hover:bg-black"
         id="resetButton"
+        onClick={resetClick}
       >
         Reset
       </button>

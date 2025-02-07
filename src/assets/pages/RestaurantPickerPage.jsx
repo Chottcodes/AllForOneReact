@@ -10,6 +10,7 @@ const ResPicker = () => {
     const submitClick = async () => {
         setApiText(await ResturantPickerAPI(userInput));
     }
+    
     const resetClick = () => {
       setApiText('Select a category');
       setempty("");
@@ -30,7 +31,7 @@ const ResPicker = () => {
     </div>
 
     <div className=" h-[20%] w-[70%] lg:w-[50%]  m-auto text-white">
-        <input type="text" placeholder="Mexican,Indian,Italian" onChange={(e) => setuserInput(e.target.value)}  id="inputBox" className="h-[100%] w-[100%] bg-black bg-opacity-80 outline outline-white outline-4 text-center text-3xl rounded-3xl"/>
+        <input type="text" placeholder="Mexican,Indian,Italian" onChange={(e) => setuserInput(e.target.value)} value={userInput}  id="inputBox" className="h-[100%] w-[100%] bg-black bg-opacity-80 outline outline-white outline-4 text-center text-3xl rounded-3xl"/>
     </div>
 
 

@@ -92,7 +92,7 @@ function App() {
       </button></Link>
       <Link className="bg-white bg-opacity-20 rounded-2xl h-28 lg:h-40 outline outline-white outline-1 w-[60%] flex flex-col justify-center items-center gap-2 hover:bg-black lg:col-start-2 lg:row-start-4 lg:w-[100%] " to="/ReverseTheNumber"><button
         id="reverseTheNumber"
-        className=""
+        className="flex flex-col items-center gap-3"
       >
         <img
           src={ReverseTheWordImage}

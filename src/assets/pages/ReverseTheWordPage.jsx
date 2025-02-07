@@ -27,7 +27,7 @@ const ReverseWord = () => {
       className="w-[80%] h-[20%] lg:w-[50%] bg-black text-2xl m-auto rounded-3xl lg:mt-[10%] outline font-sans text-white flex justify-center items-center outline-white outline-1 my-9 bg-opacity-70"
         
       >
-      <h1 id="outputText">{ApiText}</h1>
+      <h1 id="outputText" className="text-center">{ApiText}</h1>
     </div>
     <div
       className="w-[80%] h-[20%] lg:w-[50%] bg-black m-auto rounded-3xl outline outline-white outline-2 bg-opacity-70"
