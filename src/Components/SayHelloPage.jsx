@@ -12,6 +12,7 @@ const SayHello = () => {
   };
   const ResetClick = () => {
     setApiText("Please enter your name");
+    setuserInput("")
   };
   useEffect(() => {
     document.body.style.backgroundImage =
@@ -36,6 +37,7 @@ const SayHello = () => {
           type="text"
           placeholder="Enter Name"
           onChange={(event) => setuserInput(event.target.value)}
+          value={userInput}
           className="bg-black lg:text-4xl bg-opacity-80 outline outline-white outline-3 w-[100%] text-white rounded-2xl font-sans text-2xl text-center"
         />
       </div>
