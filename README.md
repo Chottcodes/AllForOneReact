@@ -1,8 +1,12 @@
-# React + Vite
+// Your name Chris Wells-Hott
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+ // Date Revised: 2/7/2025
 
-Currently, two official plugins are available:
+ // Exercise or Lab name 
+ All For One React Rebuild
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+ // Brief Description of what you did I redesigned my all for one app with React and made it responsive
+
+ // You can add multiple dates with description.
+
+// Person who Peer Reviewed your assignment
